@@ -1,0 +1,152 @@
+/*
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+line 70x3 30x2
+
+1920 - all
+1230 - content
+30/70
+#c7b299 - hover text line
+#f1eee9 - line
+#555555 - h3 icons
+#8c8c8c - text
+#998675 - button
+
+#211b19 - gradient begin
+#4e3427 - gradient end
+
+#c7b299 - waxom
+
+*/
+
+
+
+/*global*/
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+/*button*/
+
+.button {
+   width: 150px;
+   height: 50px;
+   border-radius: 5px;
+   font-size: 20px;
+   background: #998675;
+   border: none;
+}
+
+/*header*/
+
+header {
+   background: url("../images/background/photo.jpg") 50% 0% no-repeat;
+   background-size: cover; 
+   max-height: 1024px;
+}
+
+
+.header__top {
+   display: flex;
+   align-items: center;
+   width: 1230px;
+}
+
+.header__logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo__text {
+   margin: 0;
+   font-size: 35px;
+   color: white;
+}
+
+/*menu*/
+
+.menu {
+   width: 100%;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.menu .header__link {
+   display: inline-block;
+   padding: 20px;
+   color: white;
+}
+
+.menu .header__link:hover {
+   color: #c7b299;
+}
+
+/*slider*/
+
+.slider {
+   width: 300px;
+   margin: 0 auto;
+   padding: 100px;
+}
+
+/*services*/
+
+.services {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.services article{
+   text-align: center;
+   max-width: 200px;
+}
+
+.services_line {
+   width: 70px;
+   height: 3px;
+   background: #f1eee9;
+   margin: auto;
+}
+
+/*Waxom-is-realization-of-your-ideas*/
+
+.Waxom-is-realization-of-your-ideas {
+   position: relative;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.browser-center {
+   position: relative;
+   bottom: 0;
+   margin: auto;
+}
+
+.browser-left {
+   position: absolute;
+   bottom: 4px;
+   margin-left: -229px;
+}
+
+.browser-right {
+   position: absolute;
+   bottom: 4px;
+   margin-left: 229px;
+}
+
+/*text-boxes*/
+
+.text-boxes {
+   text-align: center;
+   background-image: linear-gradient(to right, #211b19, #4e3427)
+}
+
