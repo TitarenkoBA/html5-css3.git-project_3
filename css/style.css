@@ -94,12 +94,14 @@ header {
    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
    url("../images/background/photo.jpg") 50% 0% no-repeat; 
    background-size: cover;
+   min-height: 1024px;
 }
 
 
 .header__top {
    display: flex;
    align-items: center;
+   padding-top: 40px;
 }
 
 .logo {
@@ -123,7 +125,7 @@ header {
 
 .header__link {
    display: inline-block;
-   padding: 20px;
+   padding: 20px 15px;
    color: white;
    transition: all 0.5s;
 }
@@ -132,12 +134,34 @@ header {
    color: #c7b299;
 }
 
+.header__menu {
+   margin-left: 150px;
+}
+
 /*slider*/
 
 .slider {
-   width: 500px;
+   width: 650px;
    margin: 0 auto;
-   padding: 100px;
+   padding: 300px 100px;
+   text-align: center;
+   color: white;
+}
+
+.slider h1 {
+   margin: 10px auto;
+   font-weight: 900;
+   font-size: 55px;
+}
+
+.slider h2 {
+   margin: 10px auto;
+   font-weight: 500;
+   font-size: 35px;
+}
+
+.slider p {
+   margin: 10px auto 50px;
 }
 
 /*services*/
@@ -146,11 +170,12 @@ header {
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 70px 0;
 }
 
-.services article{
+.services article {
    text-align: center;
-   max-width: 200px;
+   max-width: 300px;
 }
 
 .services__line {
@@ -158,40 +183,120 @@ header {
    height: 3px;
    background: #f1eee9;
    margin: auto;
+   transition: all 0.5s;
 }
+
+.services article h3 {
+   transition: all 0.5s;
+}
+
+.services article:hover {
+   cursor: pointer;
+}
+
+.services article:hover .services__line {
+   background: #c7b299;
+}
+
+.services article:hover h3 {
+   color: #c7b299;
+}
+
+.services article .services__img {
+   widows: 45px;
+   height: 45px;
+}
+
+.services article .img_web-and-app-design {
+   background: url("../images/services-icons/web-and-app-design.png") 50% 50% no-repeat;
+   transition: all 0.5s;
+}
+
+.services article:hover .img_web-and-app-design {
+   background: url("../images/services-icons/web-and-app-design1.png") 50% 50% no-repeat;
+}
+
+.services article .img_development {
+   background: url("../images/services-icons/development.png") 50% 50% no-repeat;
+   transition: all 0.5s;
+}
+
+.services article:hover .img_development {
+   background: url("../images/services-icons/development1.png") 50% 50% no-repeat;
+}
+
+.services article .img_customization {
+   background: url("../images/services-icons/customization.png") 50% 50% no-repeat;
+   transition: all 0.5s;
+}
+
+.services article:hover .img_customization {
+   background: url("../images/services-icons/customization1.png") 50% 50% no-repeat;
+}
+
+.services article .img_marketing {
+   background: url("../images/services-icons/marketing.png") 50% 50% no-repeat;
+   transition: all 0.5s;
+}
+
+.services article:hover .img_marketing {
+   background: url("../images/services-icons/marketing1.png") 50% 50% no-repeat;
+}
+
 
 /*Waxom-is-realization-of-your-ideas*/
 
 .Waxom-is-realization-of-your-ideas {
+   padding-top: 70px;
+   padding-bottom: 0;
    background: #fbfaf8;
    position: relative;
    margin: 0 auto;
    text-align: center;
 }
 
+.Waxom-is-realization-of-your-ideas p {
+   max-width: 800px;
+   margin: 0 auto 40px;
+}
+
 .browser-center {
    position: relative;
    bottom: 0;
-   margin: auto;
+   margin: 0 auto;
 }
 
 .browser-left {
    position: absolute;
-   bottom: 4px;
+   bottom: 0.55%;
    margin-left: -229px;
 }
 
 .browser-right {
    position: absolute;
-   bottom: 4px;
+   bottom: 0.55%;
    margin-left: 229px;
 }
 
 /*text-boxes*/
 
 .text-boxes {
-   text-align: center;
    background-image: linear-gradient(to right, #211b19, #4e3427)
+}
+
+.text-boxes .content-box {
+   padding: 30px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+}
+
+.text-boxes article {
+   margin-right: 200px;
+}
+.text-boxes button {
+   margin-left: 200px;
 }
 
 /*latest-projects*/
@@ -212,4 +317,94 @@ header {
    background-color: #998675;
    border: 1px solid #998675;
    color: white;
+}
+
+
+
+
+
+/*media*/
+
+.menu_mobile {
+      display: none;
+}
+
+.menu_mobile .header__menu-mobile {
+      display: none;
+   }
+
+@media screen and (max-width: 600px) 
+{
+   .header__top {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .header__menu {
+      display: none;
+   }
+
+   .menu .link {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .menu_mobile {
+      display: block;
+      color: white;
+      padding: 20px;
+      transition: all 0.5s;
+   }
+
+   .menu_mobile:hover {
+      color: #c7b299;
+   }
+
+   .menu_mobile:hover .header__menu-mobile {
+      display: block;
+   }
+
+   .slider {
+   max-width: 500px;
+   margin: 0 auto;
+   padding: 300px 0;
+   }
+
+   .content_box {
+      max-width: 600px;
+      margin: 0 auto;
+   }
+
+   .browser-imgs {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+   }
+
+   .browser-left {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      margin-left: 0;
+      padding: 0;
+   }
+
+   .browser-center {
+      position: relative;
+      left: 0;
+      margin: 0;
+      padding: 0;
+   }
+
+   .browser-right {
+      position: relative;
+      left: 0;
+      margin-left: 0;
+      padding: 0;
+   }
+
+   .text-boxes .content-box {
+      display: flex;
+      flex-direction: column;
+   }
 }
