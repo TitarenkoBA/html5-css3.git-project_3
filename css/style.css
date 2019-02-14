@@ -67,6 +67,7 @@ p, a {
    text-transform: uppercase;
    color: white;
    font-weight: bold;
+   cursor: pointer;
    transition: all 0.5s;
 }
 
@@ -301,6 +302,16 @@ header {
 
 /*latest-projects*/
 
+.latest-pojects {
+   text-align: center;
+   padding-top: 30px;
+}
+
+.latest-pojects p {
+   margin: 30px auto;
+   max-width: 600px;
+}
+
 .latest-pojects__link {
    display: inline-block;
    min-width: 70px;
@@ -310,7 +321,7 @@ header {
    border: 1px solid #ebebeb;
    transition: all 0.5s;
    border-radius: 2px;
-   margin-right: 10px;
+   margin: 30px 5px;
 }
 
 .latest-pojects__link:hover {
@@ -319,7 +330,56 @@ header {
    color: white;
 }
 
+.latest-pojects__image-container {
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
 
+.latest-pojects figure {
+   position: relative;
+   max-height: 500px;
+   margin: 0 0 40px;
+   padding: 0;
+   background: #fbfaf8;
+}
+
+.latest-pojects figure:hover {
+   outline: 185px solid rgb(0, 0, 0, 0.5);
+   outline-offset: -185px;
+}
+
+
+/*video-presentation*/
+
+.video-presentation {
+   padding: 150px 0;
+   margin: 30px 0;
+   color: white;
+   text-align: center;
+   background: 
+   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(../images/background/video.jpg) 50% 0% no-repeat; 
+   background-size: cover;
+}
+
+.video-presentation h2 {
+   margin-top: 0;
+   padding-top: 0;
+}
+
+.video-presentation p {
+   margin: 40px auto;
+   max-width: 600px;
+}
+
+.video-presentation img {
+   cursor: pointer;
+   position: relative;
+   left: -150px;
+   margin: 40px auto;
+}
 
 
 
@@ -333,7 +393,7 @@ header {
       display: none;
    }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 800px) 
 {
    .header__top {
       display: flex;
