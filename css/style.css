@@ -350,6 +350,19 @@ header {
    outline-offset: -185px;
 }
 
+.latest-pojects__arrow {
+   position: absolute;
+   left: 20px;
+   bottom: 124px;
+   width: 30px;
+   height: 10px;
+   background: url("../images/arrows/arrow.png");
+}
+
+.latest-pojects figure:hover > .latest-pojects__arrow {
+   background: url("../images/arrows/arrow1.png")
+}
+
 
 /*video-presentation*/
 
